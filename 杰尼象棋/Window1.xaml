@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JNG音乐"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="JNG音乐.Window1"
+        mc:Ignorable="d"
+        Title="加载中。。。" Height="89" Width="301" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStyle="SingleBorderWindow" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Topmost="True" Loaded="Window_Loaded">
+    <Grid>
+        <ProgressBar x:Name="runningsign"
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  Value="0"
+  IsIndeterminate="True" Visibility="Visible" HorizontalAlignment="Left" Width="36" Height="36" VerticalAlignment="Center" Margin="20,0,0,0" />
+        <Label x:Name="label1" Content="正在连接网络。。。" HorizontalAlignment="Left" Height="36" Margin="77,0,0,0" VerticalAlignment="Center" Width="210" VerticalContentAlignment="Center"/>
+        <materialDesign:PackIcon x:Name="tipimg" Height="36" Margin="20,0,0,0" VerticalAlignment="Center" Width="36" Visibility="Hidden" Foreground="#FF3C3AFF"/>
+    </Grid>
+</Window>

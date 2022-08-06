@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Realm.Fody</name>
+    </assembly>
+    <members>
+        <member name="T:RealmWeaver.Weaver">
+            <summary>
+            This weaver is used both by Fody and the Unity weaver, so make sure to only reference Mono.Cecil and nothing Fody or Unity specific.
+            </summary>
+        </member>
+        <member name="M:RealmWeaver.Weaver.ShouldTraverseAssembly(Mono.Cecil.AssemblyNameReference)">
+            <summary>
+            This is a bit of a hack to speed up compilation times, particularly of unity projects.
+            It will return false for system assembly or assemblies that look like Unity ones.
+            </summary>
+        </member>
+    </members>
+</doc>

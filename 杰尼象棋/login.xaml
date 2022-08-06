@@ -1,0 +1,62 @@
+﻿<Window x:Class="杰尼象棋.login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:杰尼象棋"
+        mc:Ignorable="d"
+        Title="login" Height="166" Width="446"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize" SizeToContent="Manual" WindowStartupLocation="Manual" Loaded="Window_Loaded" Closed="Window_Closed" Closing="Window_Closing">
+    <Grid x:Name="g1">
+        <Label x:Name="ltip" Content="JNG项目全部通用" Height="23" VerticalAlignment="Top" FontSize="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" Foreground="#FF00518F" Background="#2D03497E"/>
+        <Button x:Name="login1" Content="登入/注册" Margin="0,0,17,9" Padding="0,3,0,0" FontSize="10" Background="#FF3A8EB7" BorderBrush="#FF101392" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="55" Click="Button_Click" FontFamily="Microsoft YaHei"/>
+        <Button x:Name="tmplogin" Style="{StaticResource MaterialDesignPaperButton}" Content="游客登入" HorizontalAlignment="Right" Margin="0,0,93,9" Width="55" Padding="0,3,0,0" FontSize="10" Height="23" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" Click="tmplogin_Click"/>
+        <Label x:Name="lpas" Content="密码" Height="23" VerticalAlignment="Top" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" Foreground="#FF00518F" Margin="0,64,0,0">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#0C03497E" Offset="1"/>
+                    <GradientStop Color="#2D03497E" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lyx" Content="邮箱" Height="23" VerticalAlignment="Top" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" Foreground="#FF00518F" Margin="0,35,0,0">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#0C03497E" Offset="1"/>
+                    <GradientStop Color="#2D03497E" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lyz" Content="验证码" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" Foreground="#FF00518F" Margin="0,91,0,0" HorizontalAlignment="Right" Width="223" Height="23" VerticalAlignment="Top">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#0C03497E" Offset="1"/>
+                    <GradientStop Color="#2D03497E" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="zh" HorizontalAlignment="Left" Height="22" Margin="70,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="10" Foreground="#FF535F70"/>
+        <TextBox x:Name="pw" HorizontalAlignment="Left" Height="22" Margin="70,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="10" Foreground="#FF535F70"/>
+        <TextBox x:Name="yz" HorizontalAlignment="Right" Height="22" Margin="0,91,44,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" FontSize="10" Foreground="#FF535F70"/>
+        <CheckBox x:Name="remme" Content="CheckBox" HorizontalAlignment="Left" Margin="15,96,0,0" Width="17" Height="17" VerticalAlignment="Top"/>
+        <Label x:Name="lrme" Content="记住我" HorizontalAlignment="Left" Margin="37,96,0,0" Width="43" Padding="0,0,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="8" Foreground="#A7000000" Height="17" VerticalAlignment="Top"/>
+        <Label x:Name="lnick" Content="昵称" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" Foreground="#FF00518F" Margin="0,91,223,0" HorizontalAlignment="Right" Width="156" Height="23" VerticalAlignment="Top">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#0C03497E" Offset="1"/>
+                    <GradientStop Color="#2D03497E" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="nick" HorizontalAlignment="Right" Height="22" Margin="0,91,238,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="10" Foreground="#FF535F70"/>
+        <Button x:Name="tpagain" Style="{StaticResource MaterialDesignPaperButton}" Content="重新发送" HorizontalAlignment="Right" Margin="0,0,168,9" Width="55" Padding="0,3,0,0" FontSize="10" Height="23" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
